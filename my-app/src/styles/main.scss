@@ -1,0 +1,14 @@
+@import './abstract/mixins.scss';
+@import './base/font.scss';
+@import './abstract/variables.scss';
+@import './base/normalize.scss';
+@import './layout/header.scss';
+@import './layout/main.scss';
+@import './components/search-bar.scss';
+@import './components/card.scss';
+@import './components/not-found.scss';
+@import './components/about.scss';
+@import './components/form.scss';
+@import './layout/footer.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Noto+Serif+Georgian&family=Oswald:wght@700&display=swap');

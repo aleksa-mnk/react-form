@@ -1,0 +1,20 @@
+.home__search {
+    box-shadow: inset 0px 0px 100px 1000px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background-image: url(https://i.ytimg.com/vi/gfeIbxbhkMM/maxresdefault.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    .MuiInputBase-input {
+        box-shadow: 0px 4px 10px 5px rgba(38, 0, 68, 0.54);
+        font-family: $spongebob-font;
+        letter-spacing: 0.1em;
+        color: #fefefe;
+        font-size: 24px;
+    }
+}
+
+.container {
+    @include flex(column, center, center, 0px);
+}

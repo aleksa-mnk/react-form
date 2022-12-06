@@ -1,0 +1,16 @@
+.not-found {
+    color: #ded230;
+    font-size: 5em;
+    line-height: 6rem;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-top: 100px;
+    font-family: $spongebob-font;
+}
+
+@media only screen and (max-width: 800px) {
+    .not-found {
+        font-size: 2em;
+        line-height: 3rem;
+    }
+}

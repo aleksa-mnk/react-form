@@ -1,0 +1,33 @@
+.footer {
+    height: 80px;
+    background-color: #552898;
+    @include flex(row, center, space-between, 10px);
+    font-family: $main-font;
+    font-size: 16px;
+    padding: 0px 20px;
+    box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.15);
+
+    &__git {
+        @include flex(row, center, space-between, 10px);
+        &--img {
+            height: 30px;
+        }
+    }
+    &__rs {
+        height: 40px;
+    }
+
+    > * {
+        filter: invert(81%) sepia(62%) saturate(261%) hue-rotate(202deg) brightness(100%) contrast(104%);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer {
+      height: 150px;
+      @include flex(column, center, center, 10px);
+      &__href {
+        order: -1;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.header-outer {
+    position: sticky;
+    top: -50px;
+    height: 100px;
+    width: 100%;
+    background-color: #552898;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    height: 50px;
+    letter-spacing: 0.1em;
+    @include flex(row, center, space-between, 0px);
+    font-family: $spongebob-font;
+    font-size: 22px;
+    position: sticky;
+    top: 0px;
+    padding: 0px 20px;
+    width: 100%;
+
+    &__logo {
+        order: -1;
+        background-image: url(../../assets/icons/logo.svg);
+        height: 100%;
+        width: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 90%;
+    }
+
+    &__item:first-child {
+        order: -2;
+    }
+
+    &__link,
+    &__link--active {
+        color: #efe4855d !important;
+        font-size: 30px;
+    }
+
+    &__link--active {
+        color: #E0CD2B !important;
+    }
+}
